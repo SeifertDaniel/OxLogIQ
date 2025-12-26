@@ -146,6 +146,7 @@ class MonologConfigurationTest extends TestCase
 
     /**
      * @throws ReflectionException
+     * @dataProvider useAlertMailDataProvider
      */
     #[Test]
     #[DataProvider('useAlertMailDataProvider')]
@@ -188,6 +189,7 @@ class MonologConfigurationTest extends TestCase
 
     /**
      * @throws ReflectionException
+     * @dataProvider getAlertMailRecipientsDataProvider
      */
     #[Test]
     #[DataProvider('getAlertMailRecipientsDataProvider')]
@@ -228,6 +230,7 @@ class MonologConfigurationTest extends TestCase
 
     /**
      * @throws ReflectionException
+     * @dataProvider getLogLevelDataProvider
      */
     #[Test]
     #[DataProvider('getLogLevelDataProvider')]
